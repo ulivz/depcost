@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "test": "npm run lint && jest",
-    "lint": "xo"
+    "lint": "xo --fix"
   },
   "repository": {
     "url": "git@github.com:rich-lab/dep-cost.git",
@@ -26,15 +26,18 @@
   "license": "MIT",
   "dependencies": {
     "cac": "6.4.0",
-    "fs-extra": "^8.1.0",
     "chalk": "^3.0.0",
-    "execa": "^4.0.0"
+    "execa": "^4.0.0",
+    "fs-extra": "^8.1.0",
+    "npmlog": "^4.1.2"
   },
   "devDependencies": {
-    "xo": "0.23.0",
+    "xo": "0.27.2",
     "eslint-config-sherry": "0.0.1"
   },
   "xo": {
+    "space": true,
+    "semicolon": false,
     "prettier": true
   }
 }
