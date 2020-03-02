@@ -10,11 +10,8 @@ tnpm install dep-cost --save
 
 ## Usage
 
-```js
-const requireTime = require('dep-cost')
-
-requireTime()
-//=> foo
+```bash
+dc dep-cost
 ```
 
 ## Contributing
