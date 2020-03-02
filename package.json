@@ -1,5 +1,5 @@
 {
-  "name": "dep-cost",
+  "name": "depcost",
   "version": "0.1.0",
   "description": "Retrieve the time and space cost of using a dependency",
   "main": "index.js",
