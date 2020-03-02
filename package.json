@@ -15,7 +15,8 @@
     "dependency"
   ],
   "scripts": {
-    "test": "npm run lint && jest",
+    "test": "jest",
+    "cov": "jest --coverage",
     "lint": "xo --fix"
   },
   "repository": {
@@ -35,7 +36,8 @@
   },
   "devDependencies": {
     "xo": "0.27.2",
-    "eslint-config-sherry": "0.0.1"
+    "eslint-config-sherry": "0.0.1",
+    "jest-cli": "^24.8.0"
   },
   "xo": {
     "space": true,
