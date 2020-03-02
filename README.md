@@ -2,17 +2,39 @@
 
 [![TNPM version](https://npm.alibaba-inc.com/badge/v/dep-cost.svg)](https://npm.alibaba-inc.com/package/dep-cost) [![TNPM downloads](https://npm.alibaba-inc.com/badge/d/dep-cost.svg)](https://npm.alibaba-inc.com/package/dep-cost) [![install size](http://npg.dockerlab.alipay.net/badge?p=dep-cost)](http://npg.dockerlab.alipay.net/result?p=dep-cost)
 
+![](./assets/example.png)
+
+## Features
+
+- Require time of a dependency
+- Install size of a dependency
+
 ## Install
 
 ```bash
-tnpm install dep-cost --save
+tnpm install depcost -g
 ```
 
 ## Usage
 
+`depcost` or its shortcut `dc`:
+
 ```bash
-dc dep-cost
+depcost [package]
+depcost [package@version]
+depcost [package1] [package2] [package3]
+depcost --debug
+depcost [package] --recent-versions=3
+depcost [package] --versions=1.0.0,2.0.0
 ```
+
+## Examples
+
+```bash
+dc vue
+```
+
+
 
 ## Contributing
 

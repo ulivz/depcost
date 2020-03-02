@@ -10,7 +10,7 @@ cli
   .command('[...pkgs]', 'Retrieve the time and space cost of using a dependency.')
   .option('-t, --track', 'Whether to keep temp directory.')
   .option('-r, --recent-versions <recentVersions>', 'Specify the count of latest versions')
-  .option('-r, --versions <versions>', 'Select specific versions.')
+  .option('-v, --versions <versions>', 'Select specific versions.')
   .option('-l, --log-level <logLevel>', 'log level.')
   .option('-l, --npm-client <npmClient>', 'set npm client, defaults to npm.')
   .option('-d, --debug', 'Shortcut to set log level to "debug".')
@@ -28,8 +28,14 @@ cli
       pkgs,
     })
 
+    let isFirst = false
+
     program.on(DepCostEvents.message, result => {
-      console.log(`${result.pkg}\t\t${result.size}\t\t${result.requireTime}`)
+      if (!isFirst) {
+        isFirst = true
+        console.log(`name\t\t\tinstall size\t\treuqire time`)
+      }
+      console.log(`${result.pkg}\t\t\t${result.size}\t\t${result.requireTime}`)
     })
 
     program.runAndEmit().catch(error => {
@@ -38,4 +44,6 @@ cli
     })
   })
 
+cli.help()
+cli.version(require('../package.json').version)
 cli.parse()
