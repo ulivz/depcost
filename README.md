@@ -22,12 +22,47 @@ tnpm install depcost -g
 `depcost` or its shortcut `dc`:
 
 ```bash
+Usage:
+  $ cli.js [...pkgs]
+
+Commands:
+  [...pkgs]  Retrieve the time and space cost of a dependency.
+
+For more info, run any command with the `--help` flag:
+  $ cli.js --help
+
+Options:
+  -t, --track                             Whether to keep temp directory.
+  -r, --recent-versions <recentVersions>  Specify the count of latest versions
+  -v, --versions <versions>               Select specific versions.
+  -l, --log-level <logLevel>              log level.
+  -l, --npm-client <npmClient>            set npm client, defaults to npm.
+  -d, --debug                             Shortcut to set log level to "debug".
+  -h, --help                              Display this message
+  -v, --version                           Display version number
+```
+
+Examples:
+
+```bash
 depcost [package]
+depcost [package] --log-level=info
+depcost [package] --debug
 depcost [package@version]
 depcost [package1] [package2] [package3]
 depcost --debug
 depcost [package] --recent-versions=3
 depcost [package] --versions=1.0.0,2.0.0
+```
+
+## Global Config
+
+You can set global options at `~/.depcostrc` with ini syntax. 
+
+e.g., set npmClient to `tnpm` globally:
+
+```bash
+echo 'npmClient=tnpm' > ~/.depcostrc
 ```
 
 ## Contributing
