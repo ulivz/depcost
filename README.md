@@ -78,7 +78,7 @@ echo 'npmClient=tnpm' > ~/.depcostrc
 
 ## Author
 
-**depcost** © [ULIVZ](https://github.com/ulivz), Released under the [MIT](./LICENSE) License.<br>
+**depcost** © [ULIVZ](https://github.com/ulivz) under [Richlab Team](https://www.yuque.com/richlab/join-us/invitation), Released under the [MIT](./LICENSE) License.<br>
 
 
 
