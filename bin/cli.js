@@ -9,7 +9,7 @@ const cli = cac()
 cli
   .command('[...pkgs]', 'Retrieve the time and space cost of a dependency.')
   .option('-t, --track', 'Whether to keep temp directory.')
-  .option('-r, --latest-versions <latestVersions>', 'Specify the count of latest versions')
+  .option('-r, --latest-versions <latestVersions>', 'Specify the count of latest versions.')
   .option('-v, --versions <versions>', 'Select specific versions.')
   .option('-l, --log-level <logLevel>', 'log level of npmlog under the hood.')
   .option('-l, --npm-client <npmClient>', 'set npm client, defaults to npm.')
@@ -19,7 +19,7 @@ cli
       opts.logLevel = 'debug'
     }
 
-    log.heading = 'dep-cost'
+    log.heading = 'depcost'
     log.level = opts.logLevel || 'warn'
     log.info('pkgs', pkgs)
     log.info('opts', opts)

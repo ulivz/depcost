@@ -4,7 +4,7 @@
 
 <p align="center">
   <img width="600" src="./assets/example.png" alt="logo"><br />
-  <span>e.g. retrieve the time & space cost of latest 5 versions of fs-extra.</span>
+  <small><i>e.g. retrieve the time & space cost of latest 5 versions of <code>fs-extra</code>.</i></small>
 </p>
 
 ## Introduction
@@ -25,23 +25,20 @@ tnpm install depcost -g
 
 ## Usage
 
-`depcost` or its shortcut `dc`:
+Using `depcost` or its shortcut `dc`:
 
 ```bash
 Usage:
-  $ cli.js [...pkgs]
-
-Commands:
-  [...pkgs]  Retrieve the time and space cost of a dependency.
+  $ depcost [...pkgs]
 
 For more info, run any command with the `--help` flag:
-  $ cli.js --help
+  $ depcost --help
 
 Options:
   -t, --track                             Whether to keep temp directory.
   -r, --latest-versions <latestVersions>  Specify the count of latest versions.
   -v, --versions <versions>               Select specific versions.
-  -l, --log-level <logLevel>              log level.
+  -l, --log-level <logLevel>              log level of npmlog under the hood.
   -l, --npm-client <npmClient>            set npm client, defaults to npm.
   -d, --debug                             Shortcut to set log level to "debug".
   -h, --help                              Display this message
@@ -79,10 +76,9 @@ echo 'npmClient=tnpm' > ~/.depcostrc
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-
 ## Author
 
-**dep-cost** © [ULIVZ](https://github.com/ulivz), Released under the [MIT](./LICENSE) License.<br>
+**depcost** © [ULIVZ](https://github.com/ulivz), Released under the [MIT](./LICENSE) License.<br>
 
 
 
