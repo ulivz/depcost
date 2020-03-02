@@ -1,8 +1,10 @@
-# dep-cost
+# depcost
 
 [![TNPM version](https://npm.alibaba-inc.com/badge/v/dep-cost.svg)](https://npm.alibaba-inc.com/package/dep-cost) [![TNPM downloads](https://npm.alibaba-inc.com/badge/d/dep-cost.svg)](https://npm.alibaba-inc.com/package/dep-cost) [![install size](http://npg.dockerlab.alipay.net/badge?p=dep-cost)](http://npg.dockerlab.alipay.net/result?p=dep-cost)
 
-![](./assets/example.png)
+<p align="center">
+  <img width="600" src="./assets/example.png" alt="logo">
+</p>
 
 ## Features
 
@@ -28,14 +30,6 @@ depcost [package] --recent-versions=3
 depcost [package] --versions=1.0.0,2.0.0
 ```
 
-## Examples
-
-```bash
-dc vue
-```
-
-
-
 ## Contributing
 
 1. Fork it!
@@ -47,7 +41,7 @@ dc vue
 
 ## Author
 
-**dep-cost** © [真山](http://gitlab.alipay-inc.com/u/haoli.chl), Released under the [MIT](./LICENSE) License.<br>
+**dep-cost** © [ULIVZ](https://github.com/ulivz), Released under the [MIT](./LICENSE) License.<br>
 
 
 
