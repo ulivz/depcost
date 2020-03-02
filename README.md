@@ -4,12 +4,14 @@
 
 <p align="center">
   <img width="600" src="./assets/example.png" alt="logo">
+  <span>Retrieve the time & space cost of latest 5 versions of fs-extra.</span>
 </p>
 
 ## Features
 
 - Require time of a dependency
 - Install size of a dependency
+- Retrieve latest versions
 
 ## Install
 
@@ -33,7 +35,7 @@ For more info, run any command with the `--help` flag:
 
 Options:
   -t, --track                             Whether to keep temp directory.
-  -r, --recent-versions <recentVersions>  Specify the count of latest versions
+  -r, --latest-versions <latestVersions>  Specify the count of latest versions.
   -v, --versions <versions>               Select specific versions.
   -l, --log-level <logLevel>              log level.
   -l, --npm-client <npmClient>            set npm client, defaults to npm.
@@ -51,7 +53,7 @@ depcost [package] --debug
 depcost [package@version]
 depcost [package1] [package2] [package3]
 depcost --debug
-depcost [package] --recent-versions=3
+depcost [package] --latest-versions=3
 depcost [package] --versions=1.0.0,2.0.0
 ```
 
