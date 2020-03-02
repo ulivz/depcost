@@ -1,17 +1,21 @@
 # depcost
 
-[![TNPM version](https://npm.alibaba-inc.com/badge/v/dep-cost.svg)](https://npm.alibaba-inc.com/package/dep-cost) [![TNPM downloads](https://npm.alibaba-inc.com/badge/d/dep-cost.svg)](https://npm.alibaba-inc.com/package/dep-cost) [![install size](http://npg.dockerlab.alipay.net/badge?p=dep-cost)](http://npg.dockerlab.alipay.net/result?p=dep-cost)
+[![NPM version](https://img.shields.io/npm/v/depcost.svg?style=flat)](https://npmjs.com/package/depcost) [![NPM downloads](https://img.shields.io/npm/dm/depcost.svg?style=flat)](https://npmjs.com/package/depcost) [![install size](https://badgen.net/packagephobia/install/depcost)](https://packagephobia.now.sh/result?p=depcost)
 
 <p align="center">
-  <img width="600" src="./assets/example.png" alt="logo">
-  <span>Retrieve the time & space cost of latest 5 versions of fs-extra.</span>
+  <img width="600" src="./assets/example.png" alt="logo"><br />
+  <span>e.g. retrieve the time & space cost of latest 5 versions of fs-extra.</span>
 </p>
+
+## Introduction
+
+**depcost** (abbr. **dc**) is a cli tool for you to judge whether a node module deserve your favor via knowing the time and space cost of a dependency.
 
 ## Features
 
-- Require time of a dependency
-- Install size of a dependency
-- Retrieve latest versions
+- With **Require time**, you will know if the dependency you are using now is likely to **slow down** your node application.
+- With **Install size** of a dependency, you will know if the dependency is too cumbersome and **wastes your disk.**
+- Quickly specify the latest released versions.
 
 ## Install
 
