@@ -37,9 +37,9 @@ For more info, run any command with the `--help` flag:
 Options:
   -t, --track                             Whether to keep temp directory.
   -r, --latest-versions <latestVersions>  Specify the count of latest versions.
-  -v, --versions <versions>               Select specific versions.
+  -s, --versions <versions>               Select specific versions.
   -l, --log-level <logLevel>              log level of npmlog under the hood.
-  -l, --npm-client <npmClient>            set npm client, defaults to npm.
+  -n, --npm-client <npmClient>            set npm client, defaults to npm.
   -d, --debug                             Shortcut to set log level to "debug".
   -h, --help                              Display this message
   -v, --version                           Display version number
@@ -53,7 +53,6 @@ depcost [package] --log-level=info
 depcost [package] --debug
 depcost [package@version]
 depcost [package1] [package2] [package3]
-depcost --debug
 depcost [package] --latest-versions=3
 depcost [package] --versions=1.0.0,2.0.0
 ```
