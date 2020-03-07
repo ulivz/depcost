@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Jest
 
 on: [push]
 
@@ -19,9 +19,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Run Jest
       uses: stefanoeb/jest-action@1.0.2
-    - name: Report Coverage
-      uses: ziishaned/jest-reporter-action@v0.0.1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        test-command: "yarn jest --coverage"
 
