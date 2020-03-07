@@ -1,6 +1,6 @@
 # depcost
 
-[![NPM version](https://img.shields.io/npm/v/depcost.svg?style=flat)](https://npmjs.com/package/depcost) [![NPM downloads](https://img.shields.io/npm/dm/depcost.svg?style=flat)](https://npmjs.com/package/depcost) [![install size](https://badgen.net/packagephobia/install/depcost)](https://packagephobia.now.sh/result?p=depcost)
+[![NPM version](https://img.shields.io/npm/v/depcost.svg?style=flat)](https://npmjs.com/package/depcost) [![NPM downloads](https://img.shields.io/npm/dm/depcost.svg?style=flat)](https://npmjs.com/package/depcost) ![Node.js CI](https://github.com/rich-lab/depcost/workflows/Node.js%20CI/badge.svg)
 
 <p align="center">
   <img width="600" src="./assets/example.png" alt="logo"><br />
