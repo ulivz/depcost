@@ -17,7 +17,8 @@
   "scripts": {
     "test": "jest",
     "cov": "jest --coverage",
-    "lint": "xo --fix"
+    "lint": "xo --fix",
+    "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "repository": {
     "url": "git@github.com:rich-lab/depcost.git",
@@ -35,8 +36,8 @@
     "strip-ansi": "^6.0.0"
   },
   "devDependencies": {
+    "conventional-changelog-cli": "^2.0.31",
     "xo": "0.27.2",
-    "eslint-config-sherry": "0.0.1",
     "jest-cli": "^24.8.0"
   },
   "xo": {
