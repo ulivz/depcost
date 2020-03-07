@@ -17,7 +17,7 @@
   "scripts": {
     "test": "jest",
     "cov": "jest --coverage",
-    "lint": "xo --fix",
+    "lint": "xo --fix lib",
     "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "repository": {
@@ -43,6 +43,9 @@
   "xo": {
     "space": true,
     "semicolon": false,
-    "prettier": true
+    "prettier": true,
+    "rules": {
+      "no-await-in-loop": "off"
+    }
   }
 }
