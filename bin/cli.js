@@ -72,6 +72,12 @@ cli
           content += `## ${packageJson.version}\n`
         }
 
+        if (opts.monorepo) {
+          const { loadMonorepoConfig } = require('../lib/load-monorepo-packages')
+          const config = loadMonorepoConfig()
+          content += `## ${config.version}\n`
+        }
+
         content += `
 | name | install size | reuqire time |
 | ---  | --- | --- |
