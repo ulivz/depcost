@@ -1,3 +1,12 @@
+## [0.1.8](https://github.com/rich-lab/depcost/compare/v0.1.7...v0.1.8) (2020-03-08)
+
+
+### Features
+
+* --monorepo flag ([5ce6fbf](https://github.com/rich-lab/depcost/commit/5ce6fbf3d06e84eb4261af3d154baac4496d249a))
+
+
+
 ## [0.1.7](https://github.com/rich-lab/depcost/compare/v0.1.6...v0.1.7) (2020-03-08)
 
 
