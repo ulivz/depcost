@@ -1,3 +1,12 @@
+## [0.1.9](https://github.com/rich-lab/depcost/compare/v0.1.8...v0.1.9) (2020-03-08)
+
+
+### Features
+
+* generate extra title for monorepo. ([faa3e96](https://github.com/rich-lab/depcost/commit/faa3e96abef15d352f16a6c72288035d12980063))
+
+
+
 ## [0.1.8](https://github.com/rich-lab/depcost/compare/v0.1.7...v0.1.8) (2020-03-08)
 
 
