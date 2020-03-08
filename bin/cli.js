@@ -8,6 +8,7 @@ const cli = cac()
 
 cli
   .command('[...pkgs]', 'Retrieve the time and space cost of a dependency.')
+  .option('--cwd', 'Current working directory.')
   .option('-t, --track', 'Whether to keep temp directory.')
   .option(
     '-r, --latest-versions <latestVersions>',
@@ -18,6 +19,8 @@ cli
   .option('-n, --npm-client <npmClient>', 'set npm client, defaults to npm.')
   .option('-d, --debug', 'Shortcut to set log level to "debug".')
   .action((pkgs, opts) => {
+    opts.cwd = opts.cwd || process.cwd()
+
     if (opts.debug) {
       opts.logLevel = 'debug'
     }
