@@ -18,7 +18,8 @@
     "test": "jest",
     "cov": "jest --coverage",
     "lint": "xo --fix lib",
-    "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
+    "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
+    "depcost": "node bin/cli.js --record --npm-client=npm"
   },
   "repository": {
     "url": "git@github.com:rich-lab/depcost.git",

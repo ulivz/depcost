@@ -52,8 +52,6 @@ cli
     })
 
     program.runAndEmit().then(() => {
-      console.log(results)
-
       if (opts.record) {
         let content = ''
 
