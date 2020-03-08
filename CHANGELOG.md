@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/rich-lab/depcost/compare/v0.1.5...v0.1.6) (2020-03-08)
+
+
+### Bug Fixes
+
+* regression of renaming files. ([d7b70a7](https://github.com/rich-lab/depcost/commit/d7b70a7092b2db325603f25ed35e195152c95e0f))
+
+
+
 ## [0.1.5](https://github.com/rich-lab/depcost/compare/v0.1.4...v0.1.5) (2020-03-08)
 
 
