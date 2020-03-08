@@ -74,7 +74,7 @@ cli
 
         if (opts.monorepo) {
           const { loadMonorepoConfig } = require('../lib/load-monorepo-packages')
-          const config = loadMonorepoConfig()
+          const config = loadMonorepoConfig(opts.cwd)
           content += `## ${config.version}\n`
         }
 
