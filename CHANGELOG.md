@@ -1,3 +1,12 @@
+## [0.1.5](https://github.com/rich-lab/depcost/compare/v0.1.4...v0.1.5) (2020-03-08)
+
+
+### Bug Fixes
+
+* wrong bin path ([03bb0fb](https://github.com/rich-lab/depcost/commit/03bb0fb06f7c21c97481859aa576aa18950e7af8))
+
+
+
 ## [0.1.4](https://github.com/rich-lab/depcost/compare/v0.1.3...v0.1.4) (2020-03-08)
 
 
