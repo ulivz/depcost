@@ -8,8 +8,8 @@
     "dc": "cli.js"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "bin",
+    "lib"
   ],
   "keywords": [
     "dependency"
