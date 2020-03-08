@@ -1,3 +1,13 @@
+## [0.1.7](https://github.com/rich-lab/depcost/compare/v0.1.6...v0.1.7) (2020-03-08)
+
+
+### Features
+
+* --cwd option and defaults to current package at cwd. ([2c201f8](https://github.com/rich-lab/depcost/commit/2c201f81c1206670b865c07b89f7a5894a362054))
+* support --record flag ([73aa773](https://github.com/rich-lab/depcost/commit/73aa773ec0a21ffe8936fb09581d0df471899f8f))
+
+
+
 ## [0.1.6](https://github.com/rich-lab/depcost/compare/v0.1.5...v0.1.6) (2020-03-08)
 
 
