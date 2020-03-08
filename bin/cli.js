@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 
+const fs = require('fs-extra')
+const path = require('path')
 const cac = require('cac')
 const log = require('npmlog')
 const { DepCost, DepCostEvents } = require('../lib')
+const requirePkg = require('../lib/require-pkg')
 
 const cli = cac()
 
@@ -14,6 +17,7 @@ cli
     '-r, --latest-versions <latestVersions>',
     'Specify the count of latest versions.'
   )
+  .option('-r, --record', 'Whether to update DEPCOST.md.')
   .option('-s, --versions <versions>', 'Select specific versions.')
   .option('-l, --log-level <logLevel>', 'log level of npmlog under the hood.')
   .option('-n, --npm-client <npmClient>', 'set npm client, defaults to npm.')
@@ -36,7 +40,10 @@ cli
 
     let isFirst = false
 
+    const results = []
+
     program.on(DepCostEvents.message, result => {
+      results.push(result)
       if (!isFirst) {
         isFirst = true
         console.log(`name\t\t\tinstall size\t\treuqire time`)
@@ -44,7 +51,34 @@ cli
       console.log(`${result.pkg}\t\t\t${result.size}\t\t${result.requireTime}`)
     })
 
-    program.runAndEmit().catch(error => {
+    program.runAndEmit().then(() => {
+      console.log(results)
+
+      if (opts.record) {
+        let content = ''
+
+        if (pkgs.length === 0) {
+          const packageJson = requirePkg(opts.cwd)
+          content += `## ${packageJson.version}\n`
+        }
+
+        content += `
+| name | install size | reuqire time |
+| ---  | --- | --- |
+${results.map(result =>
+          `| ${result.pkg} | ${result.size} | ${result.requireTime} |`
+        ).join('\n')}
+        `
+        const RECORD_FILE = 'DEPCOST.md'
+        const recordFile = path.join(opts.cwd, RECORD_FILE)
+        if (fs.existsSync(recordFile)) {
+          content = `\n\n` + content
+        }
+
+        fs.writeFileSync(recordFile, content, { flag: 'a' })
+      }
+
+    }).catch(error => {
       process.exitCode = 1
       console.log(require('chalk').red(error.stack))
     })
