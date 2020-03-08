@@ -4,8 +4,8 @@
   "description": "Retrieve the time and space cost of using a dependency",
   "main": "index.js",
   "bin": {
-    "depcost": "cli.js",
-    "dc": "cli.js"
+    "depcost": "bin/cli.js",
+    "dc": "bin/cli.js"
   },
   "files": [
     "bin",
