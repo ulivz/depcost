@@ -10,3 +10,11 @@
 | ---  | --- | --- |
 | depcost@0.1.7 | 2.0M | 1.314ms |
         
+
+
+## 0.1.8
+
+| name | install size | reuqire time |
+| ---  | --- | --- |
+| depcost@0.1.8 | 3.2M | 14.885ms |
+        
