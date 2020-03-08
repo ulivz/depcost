@@ -18,6 +18,7 @@ cli
     'Specify the count of latest versions.'
   )
   .option('-r, --record', 'Whether to update DEPCOST.md.')
+  .option('-m, --monorepo', 'Load packages for monorepo.')
   .option('-s, --versions <versions>', 'Select specific versions.')
   .option('-l, --log-level <logLevel>', 'log level of npmlog under the hood.')
   .option('-n, --npm-client <npmClient>', 'set npm client, defaults to npm.')
@@ -27,6 +28,17 @@ cli
 
     if (opts.debug) {
       opts.logLevel = 'debug'
+    }
+    if (opts.monorepo) {
+      const loadMonorepoPackages = require('../lib/load-monorepo-packages')
+      const monorepoPaackages = loadMonorepoPackages(opts.cwd)
+        .filter(pkg => !!(pkg.name && pkg.version))
+        .map(pkg => `${pkg.name}@${pkg.version}`)
+
+      pkgs = [
+        ...pkgs,
+        ...monorepoPaackages,
+      ]
     }
 
     log.heading = 'depcost'
