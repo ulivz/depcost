@@ -20,7 +20,8 @@
     "lint": "xo --fix lib",
     "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "depcost": "node bin/cli.js --record --npm-client=npm",
-    "postpublish": "npm run depcost"
+    "postpublish": "npm run depcost",
+    "release": "release-it"
   },
   "repository": {
     "url": "git@github.com:rich-lab/depcost.git",
@@ -40,8 +41,9 @@
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.31",
-    "xo": "0.27.2",
-    "jest-cli": "^24.8.0"
+    "jest-cli": "^24.8.0",
+    "release-it": "^13.0.2",
+    "xo": "0.27.2"
   },
   "xo": {
     "space": true,
