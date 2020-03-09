@@ -18,6 +18,7 @@ cli
     'Specify the count of latest versions.'
   )
   .option('-r, --record', 'Whether to update DEPCOST.md.')
+  .option('-t, --table', 'Displayed as markdown table.')
   .option('-m, --monorepo', 'Load packages for monorepo.')
   .option('-s, --versions <versions>', 'Select specific versions.')
   .option('-l, --log-level <logLevel>', 'log level of npmlog under the hood.')
@@ -56,11 +57,22 @@ cli
 
     program.on(DepCostEvents.message, result => {
       results.push(result)
-      if (!isFirst) {
-        isFirst = true
-        console.log(`name\t\t\tinstall size\t\treuqire time`)
+      if (opts.table) {
+        if (!isFirst) {
+          isFirst = true
+          console.log(`| name | install size | reuqire time |
+| ---  | --- | --- |`)
+        }
+        console.log(
+          `| ${result.pkg} | ${result.size} | ${result.requireTime} |`
+        )
+      } else {
+        if (!isFirst) {
+          isFirst = true
+          console.log(`name\t\t\tinstall size\t\treuqire time`)
+        }
+        console.log(`${result.pkg}\t\t\t${result.size}\t\t${result.requireTime}`)
       }
-      console.log(`${result.pkg}\t\t\t${result.size}\t\t${result.requireTime}`)
     })
 
     program.runAndEmit().then(() => {
