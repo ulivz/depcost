@@ -7,6 +7,15 @@
 
 
 
+## [0.1.10](https://github.com/rich-lab/depcost/compare/v0.1.9...v0.1.10) (2020-03-08)
+
+
+### Bug Fixes
+
+* missing cwd ([b59fdf9](https://github.com/rich-lab/depcost/commit/b59fdf90c003b15da4b0b85b22fb48ddce04cc22))
+
+
+
 ## [0.1.9](https://github.com/rich-lab/depcost/compare/v0.1.8...v0.1.9) (2020-03-08)
 
 
