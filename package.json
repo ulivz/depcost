@@ -52,5 +52,10 @@
     "rules": {
       "no-await-in-loop": "off"
     }
+  },
+  "release-it": {
+    "git": {
+      "tagName": "v${version}"
+    }
   }
 }
