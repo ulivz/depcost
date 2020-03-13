@@ -100,10 +100,11 @@ ${results.map(result =>
         const RECORD_FILE = 'DEPCOST.md'
         const recordFile = path.join(opts.cwd, RECORD_FILE)
         if (fs.existsSync(recordFile)) {
-          content = `\n\n` + content
+          const existedContent = fs.readFileSync(recordFile, 'utf-8')
+          content = content + existedContent
         }
 
-        fs.writeFileSync(recordFile, content, { flag: 'a' })
+        fs.writeFileSync(recordFile, content)
       }
 
     }).catch(error => {
