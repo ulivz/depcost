@@ -101,7 +101,7 @@ ${results.map(result =>
         const recordFile = path.join(opts.cwd, RECORD_FILE)
         if (fs.existsSync(recordFile)) {
           const existedContent = fs.readFileSync(recordFile, 'utf-8')
-          content = content + existedContent
+          content = content.trim() + '\n\n\n' + existedContent
         }
 
         fs.writeFileSync(recordFile, content)
