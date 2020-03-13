@@ -1,3 +1,13 @@
+# [0.2.0](https://github.com/rich-lab/depcost/compare/v0.1.10...v0.2.0) (2020-03-13)
+
+
+### Features
+
+* --table flag - allow to log as markdown table. ([d2b6a63](https://github.com/rich-lab/depcost/commit/d2b6a63866a76df03677bc9ca10e9db9c27ead80))
+* reverse insert position - from end to beginning. ([#1](https://github.com/rich-lab/depcost/issues/1)) ([77c95b6](https://github.com/rich-lab/depcost/commit/77c95b64fc9dc8c68effa87dbbc896cf2a92c7ac))
+
+
+
 ## [0.1.10](https://github.com/rich-lab/depcost/compare/v0.1.9...v0.1.10) (2020-03-08)
 
 
