@@ -1,4 +1,4 @@
-const parse = require('../lib/parsePackageName')
+const parse = require('../lib/parse-package-name')
 
 describe('parsePackageName', () => {
   it('unscoped package', () => {
