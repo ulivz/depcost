@@ -1,3 +1,15 @@
+## [0.2.1](https://github.com/rich-lab/depcost/compare/v0.2.0...v0.2.1) (2020-03-13)
+
+
+### Bug Fixes
+
+* line break. ([d4e6004](https://github.com/rich-lab/depcost/commit/d4e6004fe51c2c690294edaef424f733e5447edb))
+
+
+### Features
+
+* support yarn as npmClient ([4f6cbf9](https://github.com/rich-lab/depcost/commit/4f6cbf9de0d9b489a230f0282108e186cf134dc8))
+
 # [0.2.0](https://github.com/rich-lab/depcost/compare/v0.1.10...v0.2.0) (2020-03-13)
 
 
