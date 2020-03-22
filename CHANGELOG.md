@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/rich-lab/depcost/compare/v0.2.1...v0.2.2) (2020-03-22)
+
+
+### Performance Improvements
+
+* avoid bind listeners for process by many times. ([8f23af9](https://github.com/rich-lab/depcost/commit/8f23af9a6da0cb39fc5fa752695459105a000b22))
+
+
+
 ## [0.2.1](https://github.com/rich-lab/depcost/compare/v0.2.0...v0.2.1) (2020-03-13)
 
 
