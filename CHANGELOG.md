@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/rich-lab/depcost/compare/v0.4.0...v0.4.1) (2020-07-10)
+
+
+### Features
+
+* **$core:** return raw bytes size number ([473d3d1](https://github.com/rich-lab/depcost/commit/473d3d1fca65d3cda079ffcfc68cbb1e563593f4))
+
+
+
 # [0.4.0](https://github.com/rich-lab/depcost/compare/v0.3.0...v0.4.0) (2020-07-10)
 
 

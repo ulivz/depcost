@@ -1,3 +1,10 @@
+## 0.4.1
+
+| name | install size | reuqire time |
+| ---  | --- | --- |
+| depcost@0.4.1 | 7KB | 2.075ms |
+
+
 ## 0.4.0
 
 | name | install size | reuqire time |
