@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/rich-lab/depcost/compare/v0.3.0...v0.4.0) (2020-07-10)
+
+
+### Features
+
+* **$core:** support `--dependencies`、`--dev-dependencies`、`--all-dependencies` options ([ab0fa46](https://github.com/rich-lab/depcost/commit/ab0fa46065068088120982e6ef0c5ff78d9b51a0))
+
+
+
 # [0.3.0](https://github.com/rich-lab/depcost/compare/v0.2.2...v0.3.0) (2020-07-10)
 
 
