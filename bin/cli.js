@@ -20,6 +20,9 @@ cli
   .option('-l, --log-level <logLevel>', 'log level of npmlog under the hood.')
   .option('-n, --npm-client <npmClient>', 'set npm client, defaults to npm.')
   .option('-d, --debug', 'Shortcut to set log level to "debug".')
+  .option('--dependencies', 'Load dependencies from current packages.')
+  .option('--dev-dependencies', 'Load devDependencies of current packages.')
+  .option('--all-dependencies', 'Load dependencies & devDependencies of current packages.')
   .action((pkgs, opts) => {
     opts.pkgs = pkgs
     return boostrap(opts)
