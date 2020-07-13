@@ -1,3 +1,29 @@
+<a name="0.4.2"></a>
+## [0.4.2](https://github.com/rich-lab/depcost/compare/v0.1.10...v0.4.2) (2020-07-13)
+
+
+### Bug Fixes
+
+* line break. ([d4e6004](https://github.com/rich-lab/depcost/commit/d4e6004))
+* remove useless log. ([dcc4705](https://github.com/rich-lab/depcost/commit/dcc4705))
+
+
+### Features
+
+* --table flag - allow to log as markdown table. ([d2b6a63](https://github.com/rich-lab/depcost/commit/d2b6a63))
+* reverse insert position - from end to beginning. ([#1](https://github.com/rich-lab/depcost/issues/1)) ([77c95b6](https://github.com/rich-lab/depcost/commit/77c95b6))
+* support yarn as npmClient ([4f6cbf9](https://github.com/rich-lab/depcost/commit/4f6cbf9))
+* **$core:** expose `bootstrap` api. ([e2164fd](https://github.com/rich-lab/depcost/commit/e2164fd))
+* **$core:** return raw bytes size number ([473d3d1](https://github.com/rich-lab/depcost/commit/473d3d1))
+* **$core:** support `--dependencies`、`--dev-dependencies`、`--all-dependencies` options ([ab0fa46](https://github.com/rich-lab/depcost/commit/ab0fa46))
+
+
+### Performance Improvements
+
+* avoid bind listeners for process by many times. ([8f23af9](https://github.com/rich-lab/depcost/commit/8f23af9))
+
+
+
 ## [0.4.1](https://github.com/rich-lab/depcost/compare/v0.4.0...v0.4.1) (2020-07-10)
 
 
