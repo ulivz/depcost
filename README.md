@@ -20,7 +20,7 @@
 ## Install
 
 ```bash
-tnpm install depcost -g
+npm install depcost -g
 ```
 
 ## Usage
